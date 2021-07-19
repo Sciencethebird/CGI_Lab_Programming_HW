@@ -4,21 +4,24 @@
 
 # Problem List
 
-1. Problem 1: Array v. Pointer
+1. Array v. Pointer
     - illegal modification of string const through string pointer
 
 
-# Note 
 
-1. compile and run
+
+# Compile and run
 
     - g++/gcc -o a.out foo.cpp
     - .a.out
 
-2. What is segmentation fault?
+# Note 
+
+1. What is segmentation fault?
 
     -   記憶體錯誤
+    -   https://stackoverflow.com/questions/2346806/what-is-a-segmentation-fault
 
-3. git ignore
+2. git ignore
 
     -   https://stackoverflow.com/questions/25436312/gitignore-not-working
