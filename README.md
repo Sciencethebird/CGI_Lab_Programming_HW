@@ -5,7 +5,7 @@
 # Problem List
 
 1. Array v. Pointer
-    - illegal modification of string const through string pointer
+    - illegal modification of string const via string pointer
 
 
 
