@@ -1,4 +1,5 @@
-# Problem 3
+Problem 3
+===
 
 ## Note
 1. strtok
@@ -7,9 +8,9 @@
 -   [Reference](https://www.cplusplus.com/reference/cstring/strtok/)
 -   [why input null](https://blog.wu-boy.com/2010/04/cc-%E5%88%87%E5%89%B2%E5%AD%97%E4%B8%B2%E5%87%BD%E6%95%B8%EF%BC%9Astrtok-network-mac-address-%E5%88%86%E5%89%B2/)
 
-# Source Code of strtok()
+## Source Code of strtok()
 
-version 1
+### version 1
 ---
 ```c
 __strtok_r(char *s, const char *delim, char **last)
@@ -57,7 +58,7 @@ cont:
     /* NOTREACHED */
 }
 ```
-version 2
+### version 2
 ---
 ```c
 /* Copyright (c) Microsoft Corporation. All rights reserved. */
