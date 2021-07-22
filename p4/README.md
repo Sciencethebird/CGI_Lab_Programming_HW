@@ -4,6 +4,7 @@ Problem 4 EOF
 About this problem
 ---
 - value of character
+- [reference](https://stackoverflow.com/questions/4705968/what-is-value-of-eof-and-0-in-c)
 
 Output
 ---
