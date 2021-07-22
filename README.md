@@ -7,7 +7,12 @@
 1. Array v. Pointer
     - illegal modification of string const via string pointer
 
+2. Pointer and Comments?
+    - I'm not sure what this problem is about
 
+3. strtok()
+    - A C function to split string
+    
 
 
 # Compile and run
