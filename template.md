@@ -6,3 +6,5 @@ Note
 
 Output
 ---
+```sh
+```
