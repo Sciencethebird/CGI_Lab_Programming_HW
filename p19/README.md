@@ -1,4 +1,4 @@
-Problem 19 __FILE__
+Problem 19 Preprocessor
 ===
 
 Note
