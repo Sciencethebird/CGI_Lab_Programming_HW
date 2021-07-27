@@ -30,3 +30,4 @@
 2. git ignore
 
     -   https://stackoverflow.com/questions/25436312/gitignore-not-working
+{"mode":"full","isActive":false}
