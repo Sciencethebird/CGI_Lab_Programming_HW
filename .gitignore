@@ -3,7 +3,7 @@
 # Compiled Program
 *.out
 *.docx#
-
+.vscode/*
 .vscode/launch.json
 
 .vscode/tasks.json
