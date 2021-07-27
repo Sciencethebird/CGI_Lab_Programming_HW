@@ -69,3 +69,7 @@ cmd: help
 > test
 Not support test
 ```
+
+- When to use it
+    -   this is useful when you have a lot of similar functions and they varies a little from each other. 
+        
