@@ -2,11 +2,11 @@ Problem 3
 ===
 
 ## Note
-1. strtok
+1. `strtok()`
 
--   used to split string, by delimiters (you can use multiple character for delimiters)
--   [Reference](https://www.cplusplus.com/reference/cstring/strtok/)
--   [why input null](https://blog.wu-boy.com/2010/04/cc-%E5%88%87%E5%89%B2%E5%AD%97%E4%B8%B2%E5%87%BD%E6%95%B8%EF%BC%9Astrtok-network-mac-address-%E5%88%86%E5%89%B2/)
+    -   used to split string, by delimiters (you can use multiple character for delimiters)
+    -   [Reference](https://www.cplusplus.com/reference/cstring/strtok/)
+    -   [Why input null](https://blog.wu-boy.com/2010/04/cc-%E5%88%87%E5%89%B2%E5%AD%97%E4%B8%B2%E5%87%BD%E6%95%B8%EF%BC%9Astrtok-network-mac-address-%E5%88%86%E5%89%B2/)
 
 ## Source Code of strtok()
 
@@ -120,7 +120,7 @@ this
 is
 a
 string
-this # the original string is spilt by previous operation
+this # the original string is spilt due to the previous operation
 ```
 
 
