@@ -8,14 +8,14 @@ Note
     - it depands on the compiler
 
 - Output Explained
-    - in my environment, it works left to right, so the `i++ + ++i` work like this:
+    - in my environment, compiler works from left to right, so the `i++ + ++i` work like this:
         - init: i = 3
         - first,  (i++) + , means 3 + ?, i becomes 4
-        - then, 3 + (++i), means i becomes 5, this 3 + 5 = 8
+        - then, 3 + (++i), means i becomes 5, so the result is 3 + 5 = 8
 
 
 Output
 ---
 ```sh
-8 # output of i++ + ++i
+8 # output of i++ + ++i equals 3 + 5
 ```
