@@ -106,11 +106,11 @@ char * __cdecl strtok(char *s1, const char *delimit)
 ```
 
 - Here's why you can use `strtok(NULL, delimiter)` to split a string:
-    - `lastToken` is a static pointer, so the end of previous token will be remembered
-    - The end of token will be replaced by a NULL character, as the start of next token and the end of current token
+    - `lastToken` is a static pointer, so the location of the end of previous token will be remembered.
+    - The end character of a token will be replaced by `\0`, as the start of next token and the end of current token.
 
 - Here's why the second 'strtok()' only output "this"
-    - You can see in the source code above, `strtok()` replaces delimiters with NULL character('\0')
+    - You can see in the source code above, `strtok()` replaces delimiters with NULL character(`\0`).
     - `strtok()` uses pointer to modify the source string, so the modification affects the source string.
     
 ## Output
