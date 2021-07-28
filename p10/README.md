@@ -4,9 +4,9 @@ Problem 10 `define` in C (Macros)
 Note
 ---
 - What Macros do
-    - macros finds keywords/phases and literally replaced the code by something you wanna replace.
+    - macros tells the preprocessor to find keywords/phases and literally replaced the code by something you wanna replace.
     - form of `define`
-        - `#define`, `code_you_wanna_replace`, `replace_code`  
+        - `#define`  `target`  `source`  
 
 -   Output Explained
 ```c
