@@ -4,7 +4,7 @@ Problem 3
 ## Note
 1. `strtok()`
 
-    -   used to split string, by delimiters (you can use multiple character for delimiters)
+    -   Used to split string, by delimiters (you can use multiple character for delimiters)
     -   [Reference](https://www.cplusplus.com/reference/cstring/strtok/)
     -   [Why input null](https://blog.wu-boy.com/2010/04/cc-%E5%88%87%E5%89%B2%E5%AD%97%E4%B8%B2%E5%87%BD%E6%95%B8%EF%BC%9Astrtok-network-mac-address-%E5%88%86%E5%89%B2/)
 
@@ -106,12 +106,12 @@ char * __cdecl strtok(char *s1, const char *delimit)
 ```
 
 - Here's why you can use `strtok(NULL, delimiter)` to split a string:
-    - lastToken is static, so the end of previous token will be remembered
-    - The end of token will be replaced by a NULL character, and the end of a token will be the start of next token
+    - `lastToken` is a static pointer, so the end of previous token will be remembered
+    - The end of token will be replaced by a NULL character, as the start of next token and the end of current token
 
-- Here's why the second 'strtok()' only output ""this
-    - you can see the code, the place of delimiter is replaced by '\0'
-    - The string is modified by the pointer, so the modification applies to the origianl string too.
+- Here's why the second 'strtok()' only output "this"
+    - You can see in the source code above, `strtok()` replaces delimiters with NULL character('\0')
+    - `strtok()` uses pointer to modify the source string, so the modification affects the source string.
     
 ## Output
 
