@@ -10,8 +10,8 @@ Note
 ```
 On stack memory:
 
-low address                                high address
-    |                                           |
+low address                                 high address
+    |                                            |
     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+--+
     | | | | |T|h|i|s| |i|s| |a| |s|t|r|i|n|g|.|\0|
     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+--+
