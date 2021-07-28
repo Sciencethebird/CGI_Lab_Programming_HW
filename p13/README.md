@@ -18,7 +18,7 @@ Note
             -   I think you know this property pretty well
 
 - How include "xxx.h" works
-    - remember in cherno's video, including header files are literally copy and paste the source file to target file
+    - remember in cherno's video, including header files are literally copying and pasting header files into target files.
 
 - How to use the variable in other file (`extern`)
     - like above, if you want to keep a var/func to a certain scope, you use `static`, but what if you want to use the variable in other scope/file?
@@ -75,8 +75,9 @@ Note
     }
 
     ```
-    - See? there are two `val`, declared in different c file, one in impl.c, one in main. If you remove the `static` keyword, the compiler with find two declaration of `val`, and redeclaration error occurs.
-    - `set(100)` does change the value of `val`, but it's the `val` in the impl.c file. The reason why `val != 100`  is because the `val` in the `printf` is the `val` in the main.c, not the `val` in the `set()`.
+    - See? there are two `val`, declared in different c file, one in impl.c, one in main. If you remove the `static` keyword, the compiler will find two declaration of `val`, and redeclaration error occurs.
+    - `set(100)` does change the value of `val`, but it's the `val` in the impl.c, not the one in the main.c.
+    -  The reason why `val != 100`  is because the `val` in the `printf` is the `val` in the main.c, not the `val` in the `set()`.
 
 
 - How to make this code work?
@@ -88,7 +89,7 @@ Note
 
     // impl.c
     #include "header.h"
-    int val = 0;
+    int val = 0; // move val declaration from hearer.h to here
     void set(int x) { 
       val = x;
     }
@@ -105,12 +106,12 @@ Note
     }
 
     ```
-    - First, you can't keep val declaration in header.h anymore, since if you remove the `static`, the compiler will see them as variable declaration, which is now allowed in C/C++. So the only way is to move the `val` into impl.c file
-    - Second, in order to let the main.c file using the `val` in the impl.c, you need to add the keyword `extern`, in that way, compiler know the variable `val` comes from other source file.
+    - First, you can't keep val declaration in header.h anymore, since if you remove the `static`, after preprocessor done with copy&past, the compiler will see the same variable declared in two different places, which is now allowed in C/C++. So the only way is to move the `val` into impl.c file
+    - Second, in order to let the main.c file using the `val` in the impl.c, you need to add the keyword `extern`, in that way, compiler know the variable `val` comes from other source files.
     - the final output will be `val == 100` 
 
 Output
 ---
 ```sh
-val != 100
+val != 100 // since set() changes the val in impl.c, not the val in main.c
 ```
