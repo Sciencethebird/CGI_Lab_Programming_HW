@@ -9,5 +9,5 @@ Output
 ---
 ```sh
 ui + 1 > 0
-ui + 1 < -1
+ui + 1 < -1 // since -1 will be converted into uint, with value of 4294967295
 ```

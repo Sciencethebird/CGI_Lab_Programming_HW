@@ -2,7 +2,7 @@
 int main() {
   unsigned int ui = 2147483647; //4294967295
 
-  unsigned int neg = -2;
+  unsigned int neg = -1;
   printf("%u\n", neg);
 
   if (ui + 1 > 0)
