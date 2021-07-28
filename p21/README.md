@@ -9,9 +9,9 @@ Note
 
 - Output Explained
     - in my environment, compiler works from left to right, so the `i++ + ++i` work like this:
-        1. init: i = 3
-        2. (i++) + , means 3 + ?, i becomes 4
-        3. 3 + (++i), means i becomes 5, so the result is 3 + 5 = 8
+        - first, init: i = 3
+        - second, (i++) + , means 3 + ?, i becomes 4
+        - last, 3 + (++i), means i becomes 5, so the result is 3 + 5 = 8
 
 
 Output
