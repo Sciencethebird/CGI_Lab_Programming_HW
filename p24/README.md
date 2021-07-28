@@ -24,7 +24,7 @@ int main() {
   // +---+---+---+---+---+
 
   // after entering 257 (00000000,00000000,00000001,00000001)
-  
+
   // +---+---+---+---+---+
   // | a | 0 | 0 | 1 | 1 |
   // +---+---+---+---+---+
@@ -37,5 +37,5 @@ int main() {
 Output
 ---
 ```sh
-no. # since the content of i is overwritten by scanf
+no. # since the content of i is overwritten by scanf, i becomes 0
 ```
