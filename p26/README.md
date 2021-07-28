@@ -32,7 +32,7 @@ Note
 
     ```
 - Macro '#' and "##"
-    - '#' means replace target with "string" (add double quote)
+    - '#' means replace target with "string" (with double quote)
     ```c
     #define mkstr(s) #s
     printf(mkstr(geeksforgeeks)); // printf("geeksforgeeks");
