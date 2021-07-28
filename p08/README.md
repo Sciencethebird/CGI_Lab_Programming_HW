@@ -1,4 +1,4 @@
-Problem 8 EOL in windows
+Problem 8 EOL in Windows
 ===
 
 Note
