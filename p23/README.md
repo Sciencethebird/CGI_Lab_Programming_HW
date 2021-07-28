@@ -17,7 +17,7 @@ Note
         int c;
     }
     ```
-    - the stack will look something like this:
+    - The stack will look something like this:
     ```
     +-----+ 
     |  a  | <-- 0x7ffee226233c
@@ -29,7 +29,7 @@ Note
     |     | <-- stack pointer
     +-----+
     ```
-    - after the function is finished (return), the stack pointer points back to the starting location. The memory will look something like this:
+    - After the function is finished (return), the stack pointer points back to the starting location. The memory will look something like this:
     ```
     +-----+ 
     |  a  | <-- stack pointer
@@ -37,7 +37,7 @@ Note
     |  b  | <-- 0x7ffee2262338
     +-----+
     ```
-    - Function returning is just moving the stack pointer back to where it stared, the content of the memory will remain the same if there's no other function call or something that allocating the section of stack memory. So technically, you can access "function variables" by directly dereferecing the stack memory location.
+    - Function returning is just moving the stack pointer back to where it started, the content of the memory will remain the same if there's no other function call or something that allocating the section of stack memory. So technically, you can access "function variables" by directly dereferecing the stack memory location.
 
 
 
