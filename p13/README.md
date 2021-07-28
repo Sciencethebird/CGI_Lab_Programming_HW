@@ -106,7 +106,7 @@ Note
     }
 
     ```
-    - First, you can't keep val declaration in header.h anymore, since if you remove the `static`, after preprocessor done with copy&past, the compiler will see the same variable declared in two different places, which is now allowed in C/C++. So the only way is to move the `val` into impl.c file
+    - First, you can't keep val declaration in header.h anymore, since if you remove the `static`, after preprocessor done with copy&past, the compiler will see the same variable declared in two different places, which is not allowed in C/C++. So the only way is to move the `val` into impl.c file
     - Second, in order to let the main.c file using the `val` in the impl.c, you need to add the keyword `extern`, in that way, compiler know the variable `val` comes from other source files.
     - the final output will be `val == 100` 
 
