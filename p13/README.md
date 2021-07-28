@@ -50,7 +50,7 @@ Note
         printf("val != 100\n");
     }
     ```
-    - but the files can be translated into (after copy paste of including header files):
+    - but the files can be translated into (after copying and pasting of including header files):
     ```c
     // impl.c
     #include <stdio.h>
