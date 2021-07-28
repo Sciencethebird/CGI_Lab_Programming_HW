@@ -41,11 +41,11 @@ Note
     char *b;
     long long *c;
     char d[100];
-    printf("%p, %p\n", e, e+1);
-    printf("%p, %p\n", b, b+1);
-    printf("%p, %p\n", c, c+1);
-    printf("%p, %p\n", d, d+1);
-    printf("%p, %p\n", &d, &d+1);
+    printf("%p, %p\n", e, e+1);   // 0x10d70a000, 0x10d70a004, +4
+    printf("%p, %p\n", b, b+1);   // 0x10d7a6060, 0x10d7a6061, +1
+    printf("%p, %p\n", c, c+1);   // 0x10d70b2d1, 0x10d70b2d9, +8
+    printf("%p, %p\n", d, d+1);   // 0x7ffeefbd6360, 0x7ffeefbd6361, +1
+    printf("%p, %p\n", &d, &d+1); // 0x7ffeefbd6360, 0x7ffeefbd63c4, +100
     ```
 
 Output
