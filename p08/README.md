@@ -6,7 +6,7 @@ Note
 - On Linux(MAC)
     - 17 bytes, there're total of 17 characters (char size is 1 byte) 
 - On Windows (VSstudio)
-    - 19 bytes, 
+    - 19 bytes, since the '\n' is actually '\n\r'
 - Output Explained
     - [Reference](https://unix.stackexchange.com/questions/608267/is-a-text-file-bigger-on-windows-than-on-linux-because-of-carriage-return)
     - [Windows EOL](https://www.loginradius.com/blog/async/eol-end-of-line-or-newline-characters/)
