@@ -14,7 +14,13 @@ Note
 
     - the comparison function overflows
     - `-2147483640 - 50` should be negative, but it overflows and becomes positive, thus affecting the result of qsort()
-
+    ```c
+    // int range: -2,147,483,647 ~ 2,147,483,647
+    int compare(const void *a, const void *b) {
+      printf("%d, %d, %d \n", *(int *)a , *(int *)b, (*(int *)a - *(int *)b));
+      return (*(int *)a - *(int *)b); // -2,147,483,640 - 50 overflows
+    }
+    ```
 Output
 ---
 ```sh
