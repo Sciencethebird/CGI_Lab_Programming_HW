@@ -8,13 +8,14 @@ Problem 1: Array v. Pointer
   segmentation fault 
   
 ```c
-/** modification on string pointer (X) **/
+/** (X) modification on string pointer **/
 char *start = "this is a string"; // assign a string constant to ptr.
 start[4] = '\0'; // this causes segmentation fault since *ptr is a string contant, 
-                 // which is a not modifiable memory locat
-/** modification on string array (O) **/
-char start[] = "this is a string" // this is fine since array init copies the string data into 
-                                  // modifiable allocated memory.
+                 // which is a not modifiable memory spcae
+
+/** (O) modification on string array **/
+char start[] = "this is a string" // this is fine since array init allocates a modifiable memory space and
+                                  // copies the string data to there.
 start[4] = '\0';
 ```
 
