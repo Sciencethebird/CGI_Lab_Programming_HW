@@ -10,7 +10,7 @@ Note
     it's not a good practice, but it shows how stack works.
 
 - Stack Review
-    - ![](https://blog.gtwang.org/wp-content/uploads/2017/03/memory-layout-of-c-program-diagram-20170301-1024x962.png)
+    ![](https://blog.gtwang.org/wp-content/uploads/2017/03/memory-layout-of-c-program-diagram-20170301-1024x962.png)
     - When a function is called, the stack is used, for example:
     ```c
     foo(int a, int b){
