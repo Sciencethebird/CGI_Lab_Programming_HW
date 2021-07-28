@@ -8,6 +8,6 @@ Output Explained
 Output
 ---
 ```sh
-i + 1 < 0   //  int range = [-2147483647, 2147483647]
+i + 1 < 0   //  int range = [-2147483648, 2147483647]
 ui + 1 > 0  // uint range = [0, 4294967295]
 ```
