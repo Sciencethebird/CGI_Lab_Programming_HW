@@ -37,7 +37,7 @@ Note
     |  b  | <-- 0x7ffee2262338
     +-----+
     ```
-    - function returning is just moving the stack pointer back to where it stared, the content of the memory will remain the same if there's no other function call or something that allocating the section of stack memory. So technically, you can access "function variables" by directly dereferecing the stack memory location.
+    - Function returning is just moving the stack pointer back to where it stared, the content of the memory will remain the same if there's no other function call or something that allocating the section of stack memory. So technically, you can access "function variables" by directly dereferecing the stack memory location.
 
 
 
