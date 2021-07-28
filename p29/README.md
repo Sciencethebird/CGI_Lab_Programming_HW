@@ -21,7 +21,7 @@ Note
     }
     int main() {
         string t = "definitely a string";
-        add_argument("-h", "--help", t);   // long version
+        add_argument("-h", "--help", t);   // t has string type, long version will be used, no confusion
         add_argument("-h", "--help", "Show Help Menu"); // short version
     }
     
