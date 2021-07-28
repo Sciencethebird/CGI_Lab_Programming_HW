@@ -5,7 +5,7 @@ Note
 ---
 - `strcpy(destination, source)`
 - [Reference](https://stackoverflow.com/questions/5339762/why-my-source-is-changing-when-using-strcpy-in-c/5339798) 
-- Since you didn't allocated sufficent memory space to strcpy(), memory space of other vairable on stack are overitten by strcpy()
+- Since you didn't allocate sufficent memory space for strcpy(), it takes and overwrites the memory space of other vairable on stack.
 - To be precise, you can see the graph below
 ```
 On stack memory:
