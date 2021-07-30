@@ -6,7 +6,7 @@ Note
 
 -   This problem demonstrates how stack memory works
     -   [Reference](https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/)
--   This problem use pointer to directly access the content on stack memory, 
+-   This problem uses pointer to directly access the content on stack memory, 
     it's not a good practice, but it shows how stack works.
 
 - Stack Review
