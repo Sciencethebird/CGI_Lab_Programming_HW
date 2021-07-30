@@ -3,7 +3,7 @@ Problem 11 Size of Struct
 
 Note
 ---
-- This problem demonstrate the padding mechanism of C struct
+- This problem demonstrates the padding mechanism of C struct
     - https://stackoverflow.com/questions/1841863/size-of-struct-in-c
     - [padding in C](https://www.javatpoint.com/structure-padding-in-c)
     - Basically, your computer read memory word by word, for 32 bit system, it's 4 byte, for 64 bit system, it's 8 byte. The compiler will optimize the memory reading cycle, thus avoid separating same memory space into two words (since in that case you need extra cycles to read a single memory block)
