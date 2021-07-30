@@ -3,7 +3,7 @@ Problem 1: Array v. Pointer
 - string array vs string pointer
     - https://overiq.com/c-programming-101/character-array-and-character-pointer-in-c/
     - https://stackoverflow.com/questions/3207286/c-strings-pointer-vs-arrays
-- the main issue of problem 1 is you assign a string constant to a string ptr,
+- The main issue of problem 1 is you assign a string constant to a string ptr,
   this means the ptr points to a memory section which is not modifiable, causing 
   segmentation fault 
   
