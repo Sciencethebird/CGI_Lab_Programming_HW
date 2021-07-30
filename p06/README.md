@@ -3,7 +3,7 @@ Problem 6 Integer Problem
 
 Note
 ---
-- leading zero in number declaration means the num number is expressed in octal,  
+- leading zero in number declaration indicates the number is expressed in octal,  
  thus the output is (35731603)_8 == (7844739)_10
 
 Output
