@@ -3,7 +3,7 @@ Problem 13 include & static
 
 Note
 ---
-- Compile C program with multiple souce file
+- How to compile C program with multiple source files
     -   basically you need to compile all *.c files
     - `gcc -o a.out impl.c main.c && ./a.out `
     - [Reference](https://www.linuxtopia.org/online_books/an_introduction_to_gcc/gccintro_11.html)
