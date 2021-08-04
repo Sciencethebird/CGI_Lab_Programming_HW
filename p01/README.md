@@ -1,4 +1,4 @@
-Problem 1: Array v. Pointer
+Problem 1: Array vs Pointer
 ===
 - string array vs string pointer
     - https://overiq.com/c-programming-101/character-array-and-character-pointer-in-c/
